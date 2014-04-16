@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ILexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SciLexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scintilla.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScintillaWidget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\Accessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AutoComplete.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CallTip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CaseConvert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CaseFolder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Catalogue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CellBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\CharacterCategory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\CharacterSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharClassify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ContractionState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Decoration.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Document.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Editor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ExternalLexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Indicator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KeyMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexerBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexerModule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\LexerSimple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LineMarker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PerLine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PositionCache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RESearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RunStyles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Selection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Style.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\StyleContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UniConversion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ViewStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XPM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\WordList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lexlib\PropSetSimple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScintillaBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lexlib\Accessor.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AutoComplete.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CallTip.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaseConvert.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaseFolder.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Catalogue.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CellBuffer.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\CharacterCategory.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\CharacterSet.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharClassify.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ContractionState.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Decoration.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Document.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Editor.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExternalLexer.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Indicator.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KeyMap.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\LexerBase.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\LexerModule.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\LexerSimple.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LineMarker.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PerLine.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatWin.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PositionCache.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RESearch.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RunStyles.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Selection.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Style.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\StyleContext.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UniConversion.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ViewStyle.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XPM.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\WordList.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexlib\PropSetSimple.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScintillaBase.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexHTML.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexers\LexOthers.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScintillaWin.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

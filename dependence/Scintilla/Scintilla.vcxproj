@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF4B7CFE-A873-4851-8FC0-E7788C2A8A99}</ProjectGuid>
+    <RootNamespace>Scintilla</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\Lib\</OutDir>
+    <IntDir>$(Configuration)\Scintilla\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\Lib\</OutDir>
+    <IntDir>$(Configuration)\Scintilla\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include;$(ProjectDir)lexlib;$(ProjectDir)src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>IMM32.lib;OLE32.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include;$(ProjectDir)lexlib;$(ProjectDir)src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>IMM32.lib;OLE32.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lexlib\CharacterCategory.cxx" />
+    <ClCompile Include="lexlib\CharacterSet.cxx" />
+    <ClCompile Include="lexlib\PropSetSimple.cxx" />
+    <ClCompile Include="PlatWin.cxx" />
+    <ClCompile Include="ScintillaWin.cxx" />
+    <ClCompile Include="src\AutoComplete.cxx" />
+    <ClCompile Include="src\CallTip.cxx" />
+    <ClCompile Include="src\CaseConvert.cxx" />
+    <ClCompile Include="src\CaseFolder.cxx" />
+    <ClCompile Include="src\CellBuffer.cxx" />
+    <ClCompile Include="src\CharClassify.cxx" />
+    <ClCompile Include="src\ContractionState.cxx" />
+    <ClCompile Include="src\Decoration.cxx" />
+    <ClCompile Include="src\Document.cxx" />
+    <ClCompile Include="src\Editor.cxx" />
+    <ClCompile Include="src\Indicator.cxx" />
+    <ClCompile Include="src\KeyMap.cxx" />
+    <ClCompile Include="src\LineMarker.cxx" />
+    <ClCompile Include="src\PerLine.cxx" />
+    <ClCompile Include="src\PositionCache.cxx" />
+    <ClCompile Include="src\RESearch.cxx" />
+    <ClCompile Include="src\RunStyles.cxx" />
+    <ClCompile Include="src\ScintillaBase.cxx" />
+    <ClCompile Include="src\Selection.cxx" />
+    <ClCompile Include="src\Style.cxx" />
+    <ClCompile Include="src\UniConversion.cxx" />
+    <ClCompile Include="src\ViewStyle.cxx" />
+    <ClCompile Include="src\XPM.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Platform.h" />
+    <ClInclude Include="include\Scintilla.h" />
+    <ClInclude Include="include\ScintillaWidget.h" />
+    <ClInclude Include="lexlib\CharacterCategory.h" />
+    <ClInclude Include="lexlib\CharacterSet.h" />
+    <ClInclude Include="lexlib\PropSetSimple.h" />
+    <ClInclude Include="PlatWin.h" />
+    <ClInclude Include="src\AutoComplete.h" />
+    <ClInclude Include="src\CallTip.h" />
+    <ClInclude Include="src\CaseConvert.h" />
+    <ClInclude Include="src\CaseFolder.h" />
+    <ClInclude Include="src\CellBuffer.h" />
+    <ClInclude Include="src\CharClassify.h" />
+    <ClInclude Include="src\ContractionState.h" />
+    <ClInclude Include="src\Decoration.h" />
+    <ClInclude Include="src\Document.h" />
+    <ClInclude Include="src\Editor.h" />
+    <ClInclude Include="src\FontQuality.h" />
+    <ClInclude Include="src\Indicator.h" />
+    <ClInclude Include="src\KeyMap.h" />
+    <ClInclude Include="src\LineMarker.h" />
+    <ClInclude Include="src\PerLine.h" />
+    <ClInclude Include="src\PositionCache.h" />
+    <ClInclude Include="src\RESearch.h" />
+    <ClInclude Include="src\RunStyles.h" />
+    <ClInclude Include="src\ScintillaBase.h" />
+    <ClInclude Include="src\Selection.h" />
+    <ClInclude Include="src\Style.h" />
+    <ClInclude Include="src\UniConversion.h" />
+    <ClInclude Include="src\ViewStyle.h" />
+    <ClInclude Include="src\XPM.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
