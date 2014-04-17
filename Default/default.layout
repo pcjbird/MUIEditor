@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIList>
+  <UI Name="default">
+    <View Name="DefaultWnd" 
+          LogicInstanceName="TestLogic" 
+          UseTouch="1"
+          Layout="Abs" Size="960,640" UseDrawSolidColor="1">
+	</View>
+  </UI>
+</UIList>

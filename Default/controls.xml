@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ControlList>
+	<Label Name="lblCtrl_" Text="默认文本标签" FontColor="0,0,0" FontSize="20" Anchor="0.5,0.5"/>
+	<Sprite Name="spriteCtrl_" Image="editorhome:Default/default_sprite.png" LoadPriority="0" Size="100,129" Anchor="0.5,0.5"/>
+	<Sprite9 Name="sprite9Ctrl_" Image="editorhome:Default/default_sprite9.png" LoadPriority="0" Inset="10,10,10,10"  Size="100,129" Anchor="0.5,0.5"/>  
+	<EditBox Name="editCtrl_" Text="默认编辑框" Size="150,35" TextFontSize="20"  Anchor="0.5,0.5"/>
+	<Button Name="btnCtrl_" Size="210,82"  Anchor="0.5,0.5" ImageNormal="editorhome:Default/default_button_normal.png" ImageSelected="editorhome:Default/default_button_hover.png" ImageDisabled="editorhome:Default/default_button_disabled.png"/>
+	<Button Name="radioCtrl_" Group=""  Size="16,16"  Anchor="0.5,0.5" ImageNormal="editorhome:Default/default_radio_uncheck.png" ImageSelected="editorhome:Default/default_radio_check.png"/>
+	<Button Name="checkCtrl_"  Size="16,16"  Anchor="0.5,0.5" ImageNormal="editorhome:Default/default_checkbox_uncheck.png" ImageSelected="editorhome:Default/default_checkbox_check.png"/>
+	<MultiplexView Name="tabCtrl_"  Size="500,400"  Anchor="0.5,0.5">
+		<Page Name="page1">
+		    <Label Name="" Text="page1" FontColor="0,0,0" FontSize="20" Anchor="0.5,0.5"/>
+		</Page>
+		<Page Name="page2">
+		    <Label Name="" Text="page2" FontColor="0,0,0" FontSize="20" Anchor="0.5,0.5"/>
+		</Page>
+		<Tabs Box="Grid" GridCol="5" GridRow="1" Location="TopCenter" Pos="-12.5,-51.5" Size="567.0,100.0" >
+			<Button Name="tab1" ButtonType="TabBtn" FontSize="25.0" TextNormal="页签1" TextSelected="页签1"  ImageNormal="editorhome:Default/default_tab_normal.png" ImageSelected="editorhome:Default/default_tab_selected.png"/>
+			<Button Name="tab2" ButtonType="TabBtn" FontSize="25.0" TextNormal="页签2" TextSelected="页签2"  ImageNormal="editorhome:Default/default_tab_normal.png" ImageSelected="editorhome:Default/default_tab_selected.png"/>
+		</Tabs>
+	</MultiplexView>
+	<Progress Name="loadingCtrl_"  Size="245,22"  Anchor="0.5,0.5" Percent="50" ImageTop ="editorhome:Default/default_progress_fore.png" ImageBottom="editorhome:Default/default_progress_back.png"/>
+	<MoveView Name="scrollViewCtrl_" Size="500,400"  Anchor="0.5,0.5">
+		<Page Name="">
+		    <Label Name="" Text="ScrollView" FontColor="0,0,0" FontSize="20" Anchor="0.5,0.5"/>
+		</Page>
+	</MoveView>
+</ControlList>

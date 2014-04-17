@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MUIProject>
+  <Property Name="ProjectName" Text="项目名称" Comment="项目名称" Value="MUIProject"/>
+  <Property Name="AppHomeDirectory" Text="APP目录" Comment="应用程序安装目录" Value="apphome"/>
+  <Property Name="CacheHomeDirectory" Text="Cache目录" Comment="缓存目录" Value="cachehome"/>
+  <Property Name="DocHomeDirectory" Text="Document目录" Comment="文档目录" Value="dochome"/>
+  <Property Name="ResolutionSize" Text="画布大小" Comment="画布大小" Value="1024×768"/>
+  <Property Name="DesignViewScale" Text="缩放比例" Comment="设计视图缩放比例" Value="1"/>
+  <Property Name="PreloadResFile" Text="预加载资源" Comment="预加载资源文件" Value="$(CacheHomeDirectory)/res/uiconfig/preload.xml"/>
+  <Property Name="WidgetDictFile" Text="Widget库" Comment="Widget库" Value="$(CacheHomeDirectory)/res/uiconfig/widgets.xml"/>
+</MUIProject>

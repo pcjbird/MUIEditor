@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NodeList>
+  <Label Style="lable_1" FontColor="255,0,0" FontSize="22.0" Text="名字有六个字" />
+  <Label Style="lable_2" FontColor="0,0,100" FontSize="22.0" Text="名字有六个字" />
+  <Label Style="lable_3" FontColor="100,0,100" FontSize="28.0" Text="系统：娘娘驾到，众爱卿赶快去请安吧~~" />
+</NodeList>
