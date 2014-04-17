@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="objectItem">
+	<HorizontalLayout name="complexProperty">
+	 <Label name="nodeText" bordersize="0" width="120" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+	 <Label name="nodeLabel" bordersize="0" width="100" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+	</HorizontalLayout>
+  </ListContainerElement>
+</Window>

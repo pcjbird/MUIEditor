@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="objectItem">
+	<HorizontalLayout name="comboProperty">
+	  <Label name="nodeText" bordersize="0" width="90" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+	  <Combo name="nodeCombo" itemendellipsis="true" endellipsis="true" textpadding="0,0,25,0" itemfont="0" padding="10,0,0,0" width="105" height="25" float="false" normalimage="file='combo_input_normal.png' corner='2,2,22,2'" hotimage="file='combo_input_active.png' corner='2,2,22,2'" pushedimage="file='combo_input_active.png' corner='2,2,22,2'"  itemselectedtextcolor="#FFFFFFFF" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FFFFFFFF" itembkcolor="#FF4F4F4F" itemselectedbkcolor="#FF3E3E3E" itemhotbkcolor="#FF141414" itemendellipsis="true" itemtextpadding="10,2,1,1" dropbox="bkcolor=&quot;#FF4F4F4F&quot; bordercolor=&quot;#FF2B2B2B&quot;">
+	  </Combo>
+	</HorizontalLayout>
+  </ListContainerElement>
+</Window>

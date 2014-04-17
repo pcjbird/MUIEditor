@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Font name="Arial" size="12" bold="true" italic="false" default="true" />
+	<Font name="微软雅黑" size="14" bold="true" italic="false" default="true" />
+	<VerticalLayout name="" bkcolor="#FFFFFFFF">
+		<Button name="ImagePreview" width="200" height="200" />
+		<VerticalLayout name="" bkcolor="#FFCCCCCC">
+			<Label name="ImageSize" textpadding="2,2,0,0" align="center" width="200" textcolor="#FF141414"/>
+			<Label name="ImageInfo" textpadding="2,2,0,0" align="center" width="200" textcolor="#FF141414"/>
+		</VerticalLayout>
+	 </VerticalLayout>
+</Window>

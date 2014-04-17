@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1280,800" sizebox="4,4,4,4" caption="0,0,0,30" mininfo="800,600" roundcorner="8,8">
+	<WebBrowser name="tutorialBrowser" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"/>
+</Window>

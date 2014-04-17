@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,200" sizebox="4,4,4,4" caption="0,0,0,30" mininfo="350,200" maxinfo="350,200" roundcorner="8,8">
+    <Font name="微软雅黑" size="14" bold="true" italic="false" />
+    <Font name="微软雅黑" size="15" bold="true" italic="false" />
+    <VerticalLayout name="MainLayout" bkimage="file='confirm_wnd_background.png' corner='30,30,30,30'">
+        <HorizontalLayout name="TitleLayout" height="30">
+            <Label name="Title" text="" width="100" height="30" padding="10,0,0,0" textcolor="#00FFFBF0" font="0" />
+        </HorizontalLayout>
+        <HorizontalLayout name="InfoLayout">
+            <VerticalLayout name="LeftLayout" width="80" height="130">
+                <Button name="MsgIcon" width="42" height="40" padding="30,30,0,0" textcolor="#FF000000"/>
+            </VerticalLayout>
+            <VerticalLayout name="RightLayout">
+					<Label name="MsgInfo" align="left" text="" width="240" height="60" padding="10,30,0,0" textcolor="#00FFFBF0" font="1" multiline="true" endellipsis="true"/>
+			</VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout name="BottomLayout" height="50">
+            <Button name="btnConfirm" width="84" height="30" padding="60,5,0,0" textcolor="#FF000000" normalimage="btn_confirm.png" />
+			<Button name="btnCancel" width="84" height="30" padding="50,5,0,0" textcolor="#FF000000" normalimage="btn_cancel.png" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

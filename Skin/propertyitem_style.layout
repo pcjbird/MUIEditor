@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="objectItem">
+		<HorizontalLayout name="pathProperty">
+		 <Label name="nodeText" bordersize="0" width="90" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+		 <Edit name="nodeEdit" text="" float="false" readonly="true" padding="10,4,0,0" width="60" height="22" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFF4000" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+		 <Button name="nodeBrowseStyle" tooltip="浏览选择样式" float="false"  padding="4,6,0,0" width="18" height ="18" bordersize="1" bordercolor="#FF999999" bkimage="btn_browse_small.png"/>
+		 <Button name="nodeClearStyle" tooltip="清除样式" float="false"  padding="4,6,0,0" width="18" height ="18" bordersize="1" bordercolor="#FF999999" bkimage="btn_clear_small.png"/>
+		</HorizontalLayout>
+  </ListContainerElement>
+</Window>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="resItem">
+     <Label name="nodeText" bordersize="0" width="120" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+	 <Edit name="nodeEdit" visible="false" text="" float="true"  pos="24,2,0,0" width="150" height="22" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+  </ListContainerElement>
+</Window>

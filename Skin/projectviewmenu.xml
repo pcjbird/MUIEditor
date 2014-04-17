@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true" size="120,104">
+ <Font name="微软雅黑" size="12" bold="true" italic="false"  default="true"/>
+<VerticalLayout bkimage="file='menu_bk.png' corner='40,8,8,8'" hole="false">
+	<List header="hidden" inset="8,8,8,8" itemhotimage="file='menu_hot_bk.png' corner='2,2,2,2'" itemdisabledbkcolor="#20FFFFFF">
+		<ListContainerElement name="menu_Rename" height="22" inset="40,0,0,0">
+			<Label name="menuItem" text="重命名" textcolor="#FFC8C6CB" disabledtextcolor="#FF353535" mouse="false"/>
+		</ListContainerElement>
+		<ListContainerElement name="menu_NewLayout" height="22" inset="40,0,0,0">
+			<Label name="menuItem" text="新布局" textcolor="#FFC8C6CB" disabledtextcolor="#FF353535" mouse="false"/>
+		</ListContainerElement>
+		<ListContainerElement name="menu_Newfolder" height="22" inset="40,0,0,0">
+			<Label name="menuItem" text="新分组" textcolor="#FFC8C6CB" disabledtextcolor="#FF353535" mouse="false"/>
+		</ListContainerElement>
+		<ListContainerElement name="menu_Delete" height="22" inset="40,0,0,0">
+			<Label name="menuItem" text="删   除" textcolor="#FFC8C6CB" disabledtextcolor="#FF353535" mouse="false"/>
+		</ListContainerElement>
+	</List>
+</VerticalLayout>
+</Window>

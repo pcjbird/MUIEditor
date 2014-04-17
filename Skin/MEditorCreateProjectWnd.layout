@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="600,340" sizebox="4,4,4,4" caption="0,0,0,0" maxinfo="600,500" mininfo="600,340" roundcorner="8,8">
+    <Font name="微软雅黑" size="12" bold="true" italic="false" default="true" />
+	<Font name="微软雅黑" size="14" bold="true" italic="false" default="true" />
+	<Font name="Arial" size="12" bold="true" italic="false" default="true" />
+	<Font name="微软雅黑" size="15" bold="true" italic="false" default="true" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;vscroll_button1.png&quot; button2normalimage=&quot;vscroll_button2.png&quot; thumbnormalimage=&quot;file='vscroll_thumb.png' corner='2,2,2,2'&quot; bknormalimage=&quot;file='vscroll_back.png' corner='2,2,2,2'&quot; railnormalimage=&quot;file='vscroll_rail.png' corner='2,2,2,2'&quot;" />
+	<Default name="HScrollBar" value="button1normalimage=&quot;hscroll_button1.png&quot;  button2normalimage=&quot;hscroll_button2.png&quot; thumbnormalimage=&quot;file='hscroll_thumb.png' corner='2,2,2,2'&quot; bknormalimage=&quot;file='hscroll_back.png' corner='2,2,2,2'&quot; railnormalimage=&quot;file='hscroll_rail.png' corner='2,2,2,2'&quot;" />
+
+	<VerticalLayout name="MainLayout" bkimage="file='background.png' corner='1,1,1,1' ytiled='true'">
+		<HorizontalLayout name="TitleLayout" height ="54">
+		    <Button name="LogoIcon" tooltip="宝将科技移动游戏编辑器  V3.0" padding="10,10,0,0" width="313" height="44" bkimage="create_project_title.png" align="center" />
+		</HorizontalLayout>
+		<VerticalLayout name="BaseProjectInfoLayout">
+			<HorizontalLayout height="175">
+			  <VerticalLayout width="330">
+				<HorizontalLayout height="45">
+				  <Label name="" text="项目类型" width="80" padding="20,20,0,0" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <Combo name="DesignViewSize" itemfont="0" padding="0,20,0,0" width="120" height="25" float="false" normalimage="file='combo.png' corner='2,2,35,2'" hotimage="file='combo.png' corner='2,2,35,2'" pushedimage="file='combo.png' corner='2,2,35,2'"  itemselectedtextcolor="#FFFFFFFF" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FFFFFFFF" itembkcolor="#FF4F4F4F" itemselectedbkcolor="#FF3E3E3E" itemhotbkcolor="#FF141414" itemendellipsis="true" itemtextpadding="10,2,1,1" dropbox="bkcolor=&quot;#FF4F4F4F&quot; bordercolor=&quot;#FF2B2B2B&quot;">
+					<ListLabelElement text="640×1136" selected="true" />
+					<ListLabelElement text="1136×640" />
+					<ListLabelElement text="640×960" />
+					<ListLabelElement text="960×640" />
+					<ListLabelElement text="1024×768" />
+					<ListLabelElement text="768×1024" />
+				  </Combo>
+				  <Container name="HoldSpaceLayout" float="false"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="45"  padding="20,30,0,0">
+				  <Label name="" text="初始视图" width="80" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <Combo name="DesignViewScaleCombo" padding="0,10,0,0"  itemfont="0" width="87" height="25" float="false" normalimage="file='combo_input_normal.png' corner='2,2,22,2'" hotimage="file='combo_input_active.png' corner='2,2,22,2'" pushedimage="file='combo_input_active.png' corner='2,2,22,2'"  itemselectedtextcolor="#FFFFFFFF" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FFFFFFFF" itembkcolor="#FF4F4F4F" itemselectedbkcolor="#FF3E3E3E" itemhotbkcolor="#FF141414" itemendellipsis="true" itemtextpadding="10,2,1,1" dropbox="bkcolor=&quot;#FF4F4F4F&quot; bordercolor=&quot;#FF2B2B2B&quot;">
+					<ListLabelElement text="50%" />
+					<ListLabelElement text="100%" selected="true"/>
+					<ListLabelElement text="150%" />
+					<ListLabelElement text="200%" />
+				  </Combo>
+				  <Container name="HoldSpaceLayout" float="false"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="45" padding="20,0,0,0">
+				  <Label name="" text="项目名称" width="80" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <Edit name="editProjectName"  padding="0,10,0,0" tooltip="请输入项目名称" text="" float="false" width="210" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+				  <Container name="HoldSpaceLayout" float="false"/>
+				</HorizontalLayout>
+			  </VerticalLayout>
+			  <HorizontalLayout>
+				<VerticalLayout width="30">
+					<Label name="" text="预览" padding="0,20,0,0" font="3" float="false" textcolor="#FFFFFFFF"/>
+				</VerticalLayout>
+				<Button name="previewImage" tooltip="" width="175" height="175" normalimage="project_preview_iphone5.png" align="center" />
+			  </HorizontalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout height="45" padding="20,0,0,0">
+				  <Label name="" text="项目位置" width="80" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <Edit name="editProjectHome" readonly="true" tooltip="项目位置"  padding="0,10,0,0" text="" float="false" width="410" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+				  <Button name="btnOpenProjectHome"  padding="10,5,0,0" tooltip="浏览项目位置" width="50" height="30" normalimage="btn_browse_normal.png" hotimage="btn_browse_active.png" pushedimage="btn_browse_active.png" />
+				  <Container name="HoldSpaceLayout" float="false"/>
+			</HorizontalLayout>
+			<HorizontalLayout height="45"  padding="20,20,0,0">
+				  <Button name="btnMore" tooltip="更多"  width="60" height="30" normalimage="more_normal.png" hotimage="more_active.png" pushedimage="more_active.png" />
+				  <Button name="btnLess" tooltip="收起" width="60" height="30" normalimage="less_normal.png" hotimage="less_active.png" pushedimage="less_active.png" visible="false"/>
+				  <Container name="HoldSpaceLayout" float="false" height="30"></Container>
+			      <Button name="btnQuit" tooltip="退出" padding ="15,0,0,0" width="84" height="30" normalimage="btn_cancel_normal.png" hotimage="btn_cancel_active.png" pushedimage="btn_cancel_active.png" />
+			      <Button name="btnCreateProject" tooltip="创建" padding ="15,0,0,0" width="84" height="30" normalimage="btn_create_normal.png" hotimage="btn_create_active.png" pushedimage="btn_create_active.png" />
+				  <Container name="HoldSpaceLayout" width="20" float="false"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+        <VerticalLayout name="MoreLayout" visible="false" height="165">
+		    <HorizontalLayout height="25" padding="20,0,0,0">
+				  <CheckBox name="preloadCheck" tooltip=""  float="false" padding="10,6,0,0" width="16" height="16" normalimage="prop_uncheck.png" selectedimage="prop_check.png" selected="true"/>
+				  <Label name="" text="含预加载资源" padding="15,0,0,0" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <CheckBox name="createWidgetCheck" tooltip=""  float="false" padding="10,6,0,0" width="16" height="16" normalimage="prop_uncheck.png" selectedimage="prop_check.png" selected="true"/>
+				  <Label name="" text="创建widget库" padding="15,0,0,0" font="3" float="false" textcolor="#FFFFFFFF"/>
+			</HorizontalLayout>
+			<HorizontalLayout height="45" padding="20,0,0,0">
+				  <Label name="" text="应用程序安装目录" width="140" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <Edit name="editAppHome" readonly="true" tooltip="应用程序安装目录"  padding="0,10,0,0" text="" float="false" width="350" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+				  <Button name="btnOpenAppHome"  padding="10,5,0,0" tooltip="浏览应用程序安装目录" width="50" height="30" normalimage="btn_browse_normal.png" hotimage="btn_browse_active.png" pushedimage="btn_browse_active.png" />
+				  <Container name="HoldSpaceLayout" float="false"/>
+			</HorizontalLayout>
+			<HorizontalLayout height="45" padding="20,0,0,0">
+				  <Label name="" text="应用程序缓存目录" width="140" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <Edit name="editCacheHome" readonly="true" tooltip="应用程序缓存目录"  padding="0,10,0,0" text="" float="false" width="350" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+				  <Button name="btnOpenCacheHome"  padding="10,5,0,0" tooltip="浏览应用程序缓存目录" width="50" height="30" normalimage="btn_browse_normal.png" hotimage="btn_browse_active.png" pushedimage="btn_browse_active.png" />
+				  <Container name="HoldSpaceLayout" float="false"/>
+			</HorizontalLayout>
+			<HorizontalLayout height="45" padding="20,0,0,0">
+				  <Label name="" text="应用程序文档目录" width="140" font="3" float="false" textcolor="#FFFFFFFF"/>
+				  <Edit name="editDocumentHome" readonly="true" tooltip="应用程序文档目录"  padding="0,10,0,0" text="" float="false" width="350" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+				  <Button name="btnOpenDocumentHome"  padding="10,5,0,0" tooltip="浏览应用程序文档目录" width="50" height="30" normalimage="btn_browse_normal.png" hotimage="btn_browse_active.png" pushedimage="btn_browse_active.png" />
+				  <Container name="HoldSpaceLayout" float="false"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+		
+    </VerticalLayout>
+</Window>

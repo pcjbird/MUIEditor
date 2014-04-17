@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,130" sizebox="4,4,4,4" caption="0,0,0,30" mininfo="300,130" maxinfo="300,130" roundcorner="8,8">
+	<Font name="微软雅黑" size="14" bold="true" italic="false" default="true" />
+	<Font name="Arial" size="12" bold="true" italic="false" default="true" />
+    <VerticalLayout name="MainLayout" bkimage="file='confirm_wnd_background.png' corner='30,30,30,30'">
+        <HorizontalLayout name="TitleLayout" height="30">
+            <Label name="Title" text="保存样式" width="100" height="30" padding="10,0,0,0" textcolor="#00FFFBF0" font="0" />
+        </HorizontalLayout>
+        <VerticalLayout bkimage="file='panel_back.png' corner='5,5,5,5'" inset="2,2,2,2">
+			<HorizontalLayout height="32">
+				<Label name="Title" text="样式名" width="50" height="30" padding="10,0,0,0" textcolor="#00FFFBF0" font="1" />
+				<Edit name="editStyleName" tooltip="请输入样式名" text="" float="false"  padding="10,4,0,0" width="200" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+			</HorizontalLayout>
+		 </VerticalLayout>
+        <HorizontalLayout name="BottomLayout" height="50">
+            <Button name="btnConfirm" width="84" height="30" padding="15,5,0,0" textcolor="#FF000000" normalimage="btn_confirm.png" />
+			<Container name="HoldSpaceLayout" float="false" height="30"></Container>
+			<Button name="btnCancel" width="84" height="30" padding="15,5,0,0" textcolor="#FF000000" normalimage="btn_cancel.png" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

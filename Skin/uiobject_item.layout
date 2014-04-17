@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="objectItem">
+	<HorizontalLayout>
+     <Label name="nodeText" bordersize="0" width="220" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+	 <Container name="HoldSpaceLayout" float="false" height="5"></Container>
+	 <CheckBox name="chkObjectVisible" tooltip="可视"  float="false" padding="10,4,0,0" width="16" height="16" normalimage="object_invisible.png" selectedimage="object_visible.png" selected="true"/>
+	 <CheckBox name="chkObjectLock" tooltip="锁定"  float="false" padding="4,4,0,0" width="16" height="16" normalimage="object_unlock.png" selectedimage="object_lock.png"/>
+	</HorizontalLayout>
+  </ListContainerElement>
+</Window>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="objectItem">
+	<HorizontalLayout>
+	  <Button name="ProjectIcon"  padding="2,4,0,0" tooltip="" width="40" height="34" bkimage="project_icon.png" align="center" />
+	 <VerticalLayout name="" padding="10,0,0,0">
+		<Label name="projectName" font="1" bordersize="0" width="250" textcolor="#FFFFFFFF" disabledtextcolor="#FF808080" />
+		<Label name="projectPath" font="2" bordersize="0" width="250" textcolor="#FFC8C6CB" disabledtextcolor="#FF808080" />
+	 </VerticalLayout>
+	</HorizontalLayout>
+  </ListContainerElement>
+</Window>

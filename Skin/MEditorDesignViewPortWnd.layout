@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1280,800" sizebox="4,4,4,4" caption="0,0,0,43" mininfo="800,600" roundcorner="0,0">
+<VerticalLayout name="MainLayout" bkcolor="#FF4F4F4F">
+</VerticalLayout>
+</Window>

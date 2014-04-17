@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="600,375" sizebox="4,4,4,4" caption="0,0,0,0" maxinfo="600,375" mininfo="600,375" roundcorner="8,8">
+    <Font name="微软雅黑" size="12" bold="true" italic="false" default="true" />
+	<Font name="微软雅黑" size="14" bold="true" italic="false" default="true" />
+	<Font name="Arial" size="12" bold="true" italic="false" default="true" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;vscroll_button1.png&quot; button2normalimage=&quot;vscroll_button2.png&quot; thumbnormalimage=&quot;file='vscroll_thumb.png' corner='2,2,2,2'&quot; bknormalimage=&quot;file='vscroll_back.png' corner='2,2,2,2'&quot; railnormalimage=&quot;file='vscroll_rail.png' corner='2,2,2,2'&quot;" />
+	<Default name="HScrollBar" value="button1normalimage=&quot;hscroll_button1.png&quot;  button2normalimage=&quot;hscroll_button2.png&quot; thumbnormalimage=&quot;file='hscroll_thumb.png' corner='2,2,2,2'&quot; bknormalimage=&quot;file='hscroll_back.png' corner='2,2,2,2'&quot; railnormalimage=&quot;file='hscroll_rail.png' corner='2,2,2,2'&quot;" />
+
+	<VerticalLayout name="MainLayout" bkimage="file='background.png' corner='1,1,1,1'">
+        <HorizontalLayout name="TopLayout">
+		    <VerticalLayout name="LeftLayout" width="280">
+			    <Button name="LogoIcon" padding="12,30,0,0" tooltip="" width="254" height="64" bkimage="welcome.png" align="center" />
+				<Button name="btnCreateProject" tooltip="创建新项目" padding ="15,20,0,0" width="252" height="32" normalimage="btn_createproject_normal.png" hotimage="btn_createproject_active.png" pushedimage="btn_createproject_active.png" />
+				<Button name="btnShowGuide" tooltip="编辑器教程" padding ="15,20,0,0" width="252" height="32" normalimage="btn_guide_normal.png" hotimage="btn_guide_active.png" pushedimage="btn_guide_active.png" />
+				<Button name="btnAbout" tooltip="关于" padding ="15,20,0,0" width="252" height="32" normalimage="btn_about_normal.png" hotimage="btn_about_active.png" pushedimage="btn_about_active.png" />
+			</VerticalLayout>
+			<VerticalLayout padding="2,30,0,0"  borderround="2,2" name="RightLayout" width="310" inset="2,2,2,2"  bkimage="file='panel_back.png' corner='5,5,5,5'">
+				 <HorizontalLayout name="title" height="30">
+					<Label name="" text="最近打开过的项目" font="0" float="false" textcolor="#20CCCCCC"/>
+				 </HorizontalLayout>
+				<MUIRecentProjectsView name="recentProjectView"  header="hidden" itemshowhtml="true"  itemhotbkcolor="#20FFFFFF" itemselectedbkcolor="#40FF0000" itemendellipsis="true" vscrollbar="true" />
+				<HorizontalLayout name="status" height="30">
+					<Label name="selectedProjectInfo" text="" font="3" float="false" textcolor="#FFFFFFFF"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout name="BottomLayout" height="50">
+			<Button name="btnOpenOtherProject" tooltip="打开其他..." padding ="15,8,0,0" width="84" height="30" normalimage="btn_openother_normal.png" hotimage="btn_openother_active.png" pushedimage="btn_openother_active.png" />
+			<Container name="HoldSpaceLayout" float="false" height="30"></Container>
+			<Button name="btnQuit" tooltip="退出" padding ="15,8,0,0" width="84" height="30" normalimage="btn_cancel_normal.png" hotimage="btn_cancel_active.png" pushedimage="btn_cancel_active.png" />
+			<Button name="btnOpenProject" tooltip="打开" padding ="15,8,0,0" width="84" height="30" normalimage="btn_open_normal.png" hotimage="btn_open_active.png" pushedimage="btn_open_active.png" />
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

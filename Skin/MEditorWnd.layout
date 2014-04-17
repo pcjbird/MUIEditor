@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1280,800" sizebox="4,4,4,4" caption="0,0,0,43" mininfo="800,600" roundcorner="4,4">
+    <Font name="微软雅黑" size="12" bold="true" italic="false" default="true" />
+	<Font name="微软雅黑" size="14" bold="true" italic="false" default="true" />
+	<Font name="Arial" size="12" bold="true" italic="false" default="true" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;vscroll_button1.png&quot; button2normalimage=&quot;vscroll_button2.png&quot; thumbnormalimage=&quot;file='vscroll_thumb.png' corner='2,2,2,2'&quot; bknormalimage=&quot;file='vscroll_back.png' corner='2,2,2,2'&quot; railnormalimage=&quot;file='vscroll_rail.png' corner='2,2,2,2'&quot;" />
+	<Default name="HScrollBar" value="button1normalimage=&quot;hscroll_button1.png&quot;  button2normalimage=&quot;hscroll_button2.png&quot; thumbnormalimage=&quot;file='hscroll_thumb.png' corner='2,2,2,2'&quot; bknormalimage=&quot;file='hscroll_back.png' corner='2,2,2,2'&quot; railnormalimage=&quot;file='hscroll_rail.png' corner='2,2,2,2'&quot;" />
+    <VerticalLayout name="MainLayout" bkimage="file='background.png' corner='1,1,1,1'">
+        <HorizontalLayout name="TitleLayout" height="43">
+            <Button name="LogoIcon" tooltip="宝将科技移动游戏编辑器  V3.0" width="45" height="43" bkimage="logo.png" align="center" />
+			<Button name="Title" tooltip="宝将科技移动游戏编辑器  V3.0" padding="10,14,10,0" width="331" height="17" bkimage="title.png" align="center" />
+			<Container name="HoldSpaceLayout" float="false" height="43"></Container>
+			<Button name="MinimizeBtn"  width="46" height="33"  align="center" normalimage="btn_min_normal.png" hotimage="btn_min_active.png" pushedimage="btn_min_pushed.png" />
+			<Button name="MaximizeBtn"  width="51" height="33"  align="center" normalimage="btn_max_normal.png" hotimage="btn_max_active.png" pushedimage="btn_max_pushed.png" />
+			<Button name="RestoreBtn"  visible = "false" width="51" height="33" align="center" normalimage="btn_restore_normal.png" hotimage="btn_restore_active.png" pushedimage="btn_restore_pushed.png" />
+			<Button name="CloseBtn"  width="52" height="33" align="center" normalimage="btn_close_normal.png" hotimage="btn_close_active.png" pushedimage="btn_close_pushed.png" />
+		</HorizontalLayout>
+		<HorizontalLayout name="ToolBoxLayout" padding="10,2,20,2" height="61" bkimage="file='toolbox_back.png' corner='5,5,5,5'">
+			<Button name="btnNewProject" tooltip="新建项目" padding ="15,8,0,0" width="48" height="48" normalimage="btn_new_project_normal.png" hotimage="btn_new_project_active.png" pushedimage="btn_new_project_pushed.png" disabledimage="btn_new_project_disabled.png"/>
+			<Button name="btnOpenProject" tooltip="打开项目" padding ="15,8,0,0" width="48" height="48" normalimage="btn_open_project_normal.png" hotimage="btn_open_project_active.png" pushedimage="btn_open_project_pushed.png" disabledimage="btn_open_project_disabled.png"/>
+			<Button name="btnNewLayout" tooltip="新建布局" padding ="15,8,0,0" width="48" height="48" normalimage="btn_new_layout_normal.png" hotimage="btn_new_layout_active.png" pushedimage="btn_new_layout_pushed.png" disabledimage="btn_new_layout_disabled.png"/>
+			<Button name="btnSaveAsStyle" enabled="false" tooltip="保存为样式" padding ="15,8,0,0" width="48" height="48" normalimage="btn_save_style_normal.png" hotimage="btn_save_style_active.png" pushedimage="btn_save_style_pushed.png" disabledimage="btn_save_style_disabled.png"/>
+			<Button name="sep" padding="15,2,0,0" width = "2" height="58" normalimage="seperator.png"/>
+			<Button name="btnClockwiseRotate" enabled="false" tooltip="顺时针旋转" padding ="15,8,0,0" width="48" height="48" normalimage="btn_right_rotate_normal.png" hotimage="btn_right_rotate_active.png" pushedimage="btn_right_rotate_pushed.png" disabledimage="btn_right_rotate_disabled.png"/>
+			<Button name="btnAntiClockwiseRotate" enabled="false" tooltip="逆时针旋转" padding ="15,8,0,0" width="48" height="48" normalimage="btn_left_rotate_normal.png" hotimage="btn_left_rotate_active.png" pushedimage="btn_left_rotate_pushed.png" disabledimage="btn_left_rotate_disabled.png"/>
+			<Button name="sep" padding="15,2,0,0" width = "2" height="58" normalimage="seperator.png"/>
+			<Button name="btnAlignOriginPoint" enabled="false" tooltip="原点对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_origin_normal.png" hotimage="btn_align_origin_active.png" pushedimage="btn_align_origin_pushed.png" disabledimage="btn_align_origin_disabled.png"/>
+			<Button name="btnAlignCenterPoint" enabled="false" tooltip="中心点对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_centerpoint_normal.png" hotimage="btn_align_centerpoint_active.png" pushedimage="btn_align_centerpoint_pushed.png" disabledimage="btn_align_centerpoint_disabled.png"/>
+			<Button name="btnAlignLeft" enabled="false" tooltip="左边对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_left_normal.png" hotimage="btn_align_left_active.png" pushedimage="btn_align_left_pushed.png" disabledimage="btn_align_left_disabled.png"/>
+			<Button name="btnAlignCenter" enabled="false" tooltip="居中对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_center_normal.png" hotimage="btn_align_center_active.png" pushedimage="btn_align_center_pushed.png" disabledimage="btn_align_center_disabled.png"/>
+			<Button name="btnAlignRight" enabled="false" tooltip="右边对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_right_normal.png" hotimage="btn_align_right_active.png" pushedimage="btn_align_right_pushed.png" disabledimage="btn_align_right_disabled.png"/>
+			<Button name="btnAlignTop" enabled="false" tooltip="顶端对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_top_normal.png" hotimage="btn_align_top_active.png" pushedimage="btn_align_top_pushed.png" disabledimage="btn_align_top_disabled.png"/>
+			<Button name="btnAlignVCenter" enabled="false" tooltip="水平对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_vcenter_normal.png" hotimage="btn_align_vcenter_active.png" pushedimage="btn_align_vcenter_pushed.png" disabledimage="btn_align_vcenter_disabled.png"/>
+			<Button name="btnAlignBottom" enabled="false" tooltip="底端对齐" padding ="15,8,0,0" width="48" height="48" normalimage="btn_align_bottom_normal.png" hotimage="btn_align_bottom_active.png" pushedimage="btn_align_bottom_pushed.png" disabledimage="btn_align_bottom_disabled.png"/>
+			<Button name="sep" padding="15,2,0,0" width = "2" height="58" normalimage="seperator.png"/>
+			<Label name="" text="画布大小" width="60" float="false" textcolor="#FFFFFFFF"  font="0" padding="25,0,0,0"/>
+			<Combo name="DesignViewSize" itemfont="0" padding="0,20,0,0" width="120" height="25" float="false" normalimage="file='combo.png' corner='2,2,35,2'" hotimage="file='combo.png' corner='2,2,35,2'" pushedimage="file='combo.png' corner='2,2,35,2'"  itemselectedtextcolor="#FFFFFFFF" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FFFFFFFF" itembkcolor="#FF4F4F4F" itemselectedbkcolor="#FF3E3E3E" itemhotbkcolor="#FF141414" itemendellipsis="true" itemtextpadding="10,2,1,1" dropbox="bkcolor=&quot;#FF4F4F4F&quot; bordercolor=&quot;#FF2B2B2B&quot;">
+					<ListLabelElement text="640×1136" selected="true" />
+					<ListLabelElement text="1136×640" />
+					<ListLabelElement text="640×960" />
+					<ListLabelElement text="960×640" />
+					<ListLabelElement text="1024×768" />
+					<ListLabelElement text="768×1024" />
+			</Combo>
+			<Button name="sep" padding="15,2,0,0" width = "2" height="58" normalimage="seperator.png"/>
+			<CheckBox name="showBoundsCheck" tooltip="是否显示包围盒"  float="false" padding="15,23,0,0" width="24" height="22" normalimage="showbounds_uncheck.png" selectedimage="showbounds_check.png"/>
+			<Label name="" text="显示包围盒" width="70" float="false" textcolor="#FFFFFFFF"  font="0" padding="4,0,0,0"/>
+			<Button name="sep" padding="15,2,0,0" width = "2" height="58" normalimage="seperator.png"/>
+			<Button name="btnShowEditorTutorial" tooltip="查看编辑器教程" padding ="15,20,0,0" width="104" height="28" normalimage="btn_show_tutorial_normal.png" hotimage="btn_show_tutorial_active.png" pushedimage="btn_show_tutorial_active.png" />
+			<Button name="btnExitStyleEdit" visible="false" tooltip="保存并退出样式编辑" padding ="15,20,0,0" width="104" height="28" normalimage="btn_exit_style_normal.png" hotimage="btn_exit_style_active.png" pushedimage="btn_exit_style_active.png" />
+		</HorizontalLayout>
+		<HorizontalLayout name="WorkAreaLayout" >
+		    <TileLayout name="ComponentLayout" padding="10,10,0,10" float="false" width="110" columns="2" bkimage="file='toolbox_back.png' corner='5,5,5,5'" inset="4,4,4,4" childpadding="4">
+				<Option float="false" name="LabelCtrl" width="50" height="45"  tooltip="文本标签" normalimage="ctrl_label_normal.png" selectedimage="ctrl_label_selected.png" group="ComponentQuickBox" selected="true" dropsource="true"/>
+				<Option float="false" name="SpriteCtrl" width="50" height="45"  tooltip="图片精灵" normalimage="ctrl_sprite_normal.png" selectedimage="ctrl_sprite_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="Sprite9Ctrl" width="50" height="45"  tooltip="九宫图片精灵" normalimage="ctrl_sprite9_normal.png" selectedimage="ctrl_sprite9_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="EditCtrl" width="50" height="45"  tooltip="编辑框" normalimage="ctrl_edit_normal.png" selectedimage="ctrl_edit_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="BtnCtrl" width="50" height="45"  tooltip="按钮" normalimage="ctrl_button_normal.png" selectedimage="ctrl_button_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="TabCtrl" width="50" height="45"  tooltip="Tab页签" normalimage="ctrl_tab_normal.png" selectedimage="ctrl_tab_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="RadioButtonCtrl" width="50" height="45"  tooltip="单选框" normalimage="ctrl_radiobutton_normal.png" selectedimage="ctrl_radiobutton_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="CheckBoxCtrl" width="50" height="45"  tooltip="复选框" normalimage="ctrl_checkbox_normal.png" selectedimage="ctrl_checkbox_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="ProgressBarCtrl" width="50" height="45"  tooltip="进度条" normalimage="ctrl_progressbar_normal.png" selectedimage="ctrl_progressbar_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="SliderBarCtrl" width="50" height="45"  tooltip="滑块" normalimage="ctrl_sliderbar_normal.png" selectedimage="ctrl_sliderbar_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="ScrollViewCtrl" width="50" height="45"  tooltip="ScrollView" normalimage="ctrl_scrollview_normal.png" selectedimage="ctrl_scrollview_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="ListViewCtrl" width="50" height="45"  tooltip="ListView" normalimage="ctrl_listview_normal.png" selectedimage="ctrl_listview_selected.png" group="ComponentQuickBox" dropsource="true"/>
+				<Option float="false" name="ParticleCtrl" width="50" height="45"  tooltip="粒子" normalimage="ctrl_particle_normal.png" selectedimage="ctrl_particle_selected.png" group="ComponentQuickBox" dropsource="true"/>
+			</TileLayout>
+			<VerticalLayout name="WorkAreaLeftLayout" padding="10,10,0,10" width="300">
+				<VerticalLayout name="ProjectViewLayout" height="414">
+					<HorizontalLayout name="TabLayout" height="29">
+						 <Option float="false" text="项目" tooltip="项目" name="UIProjectTab" width="139" height="29" textcolor="#FFFFFFFF" font="0" normalimage="file='tab_normal.png' corner='2,2,30,2'" hotimage="file='tab_selected.png' corner='2,2,30,2'" pushedimage="file='tab_selected.png' corner='2,2,30,2'" selectedimage="file='tab_selected.png' corner='2,2,30,2'" group="ProjectTab" selected="true"/>
+					</HorizontalLayout>
+					<TabLayout name="switch" height="380">
+					  <VerticalLayout bkimage="file='panel_back.png' corner='5,5,5,5'" inset="2,2,2,2">
+						<HorizontalLayout height="32" bkcolor="#FF595959">
+							<Edit name="editSearchLayout" tooltip="请输入搜索关键词" text="" float="false"  padding="10,4,0,0" width="250" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+							<Button name="btnSearchLayout" tooltip="搜索" float="false" padding="4,4,0,0" width="23" height="25" normalimage="file=&apos;btn_search.png&apos; source=&apos;0,0,18,18&apos; dest='0,3,18,21' " hotimage="file=&apos;btn_search.png&apos; source=&apos;19,0,37,18&apos; dest='0,3,18,21' " pushedimage="file=&apos;btn_search.png&apos; source=&apos;38,0,56,18&apos; dest='0,3,18,21' " />
+						</HorizontalLayout>
+						<MUIProjectView name="projectView" menu="true" header="hidden" itemshowhtml="true" itemhotbkcolor="#20FFFFFF" itemselectedbkcolor="#40FF0000" vscrollbar="true" />
+					  </VerticalLayout>
+					</TabLayout>
+					<Container name="HoldSpaceLayout" float="false" height="5"></Container>
+				</VerticalLayout>
+			    <HorizontalLayout name="TabLayout" height="29">
+					 <Option float="false" text="对象结构" tooltip="对象结构" name="UIObjectHierarchyTab" width="139" height="29" textcolor="#FFFFFFFF" font="0" normalimage="file='tab_normal.png' corner='2,2,30,2'" hotimage="file='tab_selected.png' corner='2,2,30,2'" pushedimage="file='tab_selected.png' corner='2,2,30,2'" selectedimage="file='tab_selected.png' corner='2,2,30,2'" group="HierarchyTab" selected="true"/>
+				</HorizontalLayout>
+				<TabLayout name="switch">
+				  <VerticalLayout bkimage="file='panel_back.png' corner='5,5,5,5'" inset="2,2,2,2">
+					<MUIObjectView name="objectView"  header="hidden" itemshowhtml="true" itemhotbkcolor="#20FFFFFF" itemselectedbkcolor="#40FF0000" vscrollbar="true" />
+				  </VerticalLayout>
+				</TabLayout>
+			</VerticalLayout>
+			<VerticalLayout name="WorkAreaMiddleLayout">
+			     <VerticalLayout name="DesignAreaLayout" padding="10,10,0,0">
+					<HorizontalLayout name="ActivatedUITabLayout" height="29">
+						 <Option name="tabActivedUI" visible="false" float="false" text=""  endellipsis="true" width="150" height="29" textcolor="#FFFFFFFF" font="0" normalimage="file='tab_normal.png'  corner='2,2,30,2'" hotimage="file='tab_selected.png' corner='2,2,30,2'" pushedimage="file='tab_selected.png' corner='2,2,30,2'" selectedimage="file='tab_selected.png' corner='2,2,30,2'" group="DesignTab" selected="true"/>
+					</HorizontalLayout>
+					<TabLayout name="DesignViewSwitch">
+					  <HorizontalLayout bkimage="file='panel_back.png' corner='5,5,5,5'">
+					      <MUIDesignView padding="5,5,0,5" float="false" bkcolor="#FF4F4F4F"/>
+					  </HorizontalLayout>
+					   <HorizontalLayout bkimage="file='panel_back.png' corner='5,5,5,5'">
+					      <MUIXmlDesignView padding="5,5,0,5" float="false" bkcolor="#FF4F4F4F"/>
+					  </HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>
+				<VerticalLayout name="OutputLayout" padding="10,10,0,0" height="150">
+					<HorizontalLayout name="TabLayout" height="29">
+						 <Option float="false" text="输出" tooltip="输出窗口" width="139"  height="29" textcolor="#FFFFFFFF" font="0" normalimage="file='tab_normal.png'  corner='2,2,30,2'" hotimage="file='tab_selected.png' corner='2,2,30,2'" pushedimage="file='tab_selected.png' corner='2,2,30,2'" selectedimage="file='tab_selected.png' corner='2,2,30,2'" group="OutputTab" selected="true"/>	
+					</HorizontalLayout>
+					<TabLayout name="switch">
+					  <HorizontalLayout bkimage="file='panel_back.png' corner='5,5,5,5'"> 
+						<RichEdit name="OutputTextArea" font="2" float="false" padding="4,3,0,0" transparent="true" textcolor="#FFC8C6CB" multiline="true" vscrollbar="true" autovscroll="true" rich="true" readonly="true"/>
+					  </HorizontalLayout>
+					</TabLayout>
+				</VerticalLayout>
+			</VerticalLayout>
+			<VerticalLayout name="WorkAreaRightLayout" padding="10,10,0,10" width="250">
+				<HorizontalLayout name="TabLayout" height="29">
+					 <Option float="false" text="属性" align="left" align="vcenter" textpadding="15,0,0,0" tooltip="对象属性区" name="UIObjectPropertyTab" width="85" height="29" textcolor="#FFFFFFFF" font="0" normalimage="file='tab_normal.png' corner='2,2,30,2'" hotimage="file='tab_selected.png' corner='2,2,30,2'" pushedimage="file='tab_selected.png' corner='2,2,30,2'" selectedimage="file='tab_selected.png' corner='2,2,30,2'" group="WorkAreaRightTab" selected="true"/>
+					 <Option float="false" text="资源" align="left" align="vcenter" textpadding="15,0,0,0" tooltip="资源区" name="UIResManagerTab" width="85" height="29" textcolor="#FFFFFFFF" font="0" normalimage="file='tab_normal.png' corner='2,2,30,2'" hotimage="file='tab_selected.png' corner='2,2,30,2'" pushedimage="file='tab_selected.png' corner='2,2,30,2'" selectedimage="file='tab_selected.png' corner='2,2,30,2'" group="WorkAreaRightTab"/>
+					 <Option float="false" text="样式" align="left" align="vcenter" textpadding="15,0,0,0" tooltip="样式库" name="UIWidgetsTab" width="85" height="29" textcolor="#FFFFFFFF" font="0" normalimage="file='tab_normal.png' corner='2,2,30,2'" hotimage="file='tab_selected.png' corner='2,2,30,2'" pushedimage="file='tab_selected.png' corner='2,2,30,2'" selectedimage="file='tab_selected.png' corner='2,2,30,2'" group="WorkAreaRightTab"/>
+				</HorizontalLayout>
+				<TabLayout name="WorkAreaRightTabSwitch">
+				  <VerticalLayout bkimage="file='panel_back.png' corner='5,5,5,5'" inset="2,2,2,2">
+				  <MUIPropertyView name="propertyView"  header="hidden" itemshowhtml="true" itemhotbkcolor="#00FFFFFF" itemselectedbkcolor="#00FF0000" vscrollbar="true" />
+				  </VerticalLayout>
+				  <VerticalLayout bkimage="file='panel_back.png' corner='5,5,5,5'" inset="2,2,2,2">
+					<HorizontalLayout height="32" bkcolor="#FF595959">
+						<Edit name="editSearchRes" tooltip="请输入搜索关键词" text="" float="false"  padding="10,4,0,0" width="210" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+						<Button name="btnSearchRes" tooltip="搜索" float="false" padding="4,4,0,0" width="23" height="25" normalimage="file=&apos;btn_search.png&apos; source=&apos;0,0,18,18&apos; dest='0,3,18,21' " hotimage="file=&apos;btn_search.png&apos; source=&apos;19,0,37,18&apos; dest='0,3,18,21' " pushedimage="file=&apos;btn_search.png&apos; source=&apos;38,0,56,18&apos; dest='0,3,18,21' " />
+					</HorizontalLayout>
+					<HorizontalLayout height="25" bkcolor="#FF595959">
+						<Button name="btnAddImage" tooltip="添加图片" float="false" padding="10,0,0,0" width="18" height="18" normalimage="btn_add_image.png"/>
+						<Button name="btnAddFolder" tooltip="添加文件夹" float="false" padding="10,0,0,0" width="18" height="18" normalimage="btn_add_folder.png"/>
+						<Button name="btnRefreshRes" tooltip="刷新资源区" float="false" padding="10,0,0,0" width="18" height="18" normalimage="btn_refresh_res.png"/>
+					</HorizontalLayout>
+					<MUIResView name="resView"  header="hidden" itemshowhtml="true"  itemhotbkcolor="#20FFFFFF" itemselectedbkcolor="#40FF0000" vscrollbar="true" />
+				  </VerticalLayout>
+				  <VerticalLayout bkimage="file='panel_back.png' corner='5,5,5,5'" inset="2,2,2,2">
+				    <HorizontalLayout height="32" bkcolor="#FF595959">
+						<Edit name="editSearchStyle" tooltip="请输入搜索关键词" text="" float="false"  padding="10,4,0,0" width="150" height="25" textpadding="4,3,4,3" bkcolor="#00000000" nativebkcolor="0x003D3E3E" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  bkimage="file='toolbox_back.png' corner='5,5,5,5'"/>
+						<Button name="btnSearchStyle" tooltip="搜索" float="false" padding="4,4,0,0" width="23" height="25" normalimage="file=&apos;btn_search.png&apos; source=&apos;0,0,18,18&apos; dest='0,3,18,21' " hotimage="file=&apos;btn_search.png&apos; source=&apos;19,0,37,18&apos; dest='0,3,18,21' " pushedimage="file=&apos;btn_search.png&apos; source=&apos;38,0,56,18&apos; dest='0,3,18,21' " />
+						<Button name="btnDelSelStyle" tooltip="删除选择样式" float="false" padding="4,4,0,0" width="23" height="25" bordersize="1" bordercolor="#FF999999" bkimage="btn_del_style.png"/>
+						<Button name="btnClearStyleCache" tooltip="清除样式预览缓存" float="false" padding="4,4,0,0" width="23" height="25" bordersize="1" bordercolor="#FF999999" bkimage="btn_clear_stylecache.png"/>
+					</HorizontalLayout>
+					<MUIWidgetView name="widgetView"  header="hidden" itemshowhtml="true"  itemhotbkcolor="#20FFFFFF" itemselectedbkcolor="#40FF0000" vscrollbar="true" />
+				  </VerticalLayout>
+				</TabLayout>
+			</VerticalLayout>	
+		</HorizontalLayout>
+		<HorizontalLayout name="StatusBarLayout" height="30">
+		<Button name="CompanyInfo" tooltip="苏州宝将信息科技有限公司" padding="10,0,0,0" width="249" height="28" bkimage="company_info.png" />
+		<Container name="HoldSpaceLayout" float="false" height="30"></Container>
+		<Label name="lblActiveUIObjectName" text="" font="0"  width="140" float="false" textcolor="#FFFFFFFF"  />
+		<Label name="" text="位置" font="0" width="30" float="false" textcolor="#FFFFFFFF"  font="0"/>
+		<Label name="lblActiveUIObjectPos" text="" font="0" width="110" float="false" textcolor="#FFFFFFFF" font="0"/>
+		<Label name="" text="旋转" font="0" width="30" float="false" textcolor="#FFFFFFFF"   font="0"/>
+		<Label name="lblActiveUIObjectRotate" text="" font="0" width="60" float="false" textcolor="#FFFFFFFF"   font="0"/>
+		<Label name="" text="缩放" font="0" width="30" float="false" textcolor="#FFFFFFFF"   font="0"/>
+		<Label name="lblActiveUIObjectScale" text="" font="0" width="110" float="false" textcolor="#FFFFFFFF"   font="0"/>
+		<Slider name="DesignViewScaleSlider" padding="0,4,0,0" width="245" height="22" bkimage="file='slider_back.png' corner='5,5,5,5'" foreimage="file='slider_fore.png' corner='5,5,5,5'" thumbimage="slider_thumb.png" thumbsize="20,22" min="20" max="200" value="50"/>
+		<Combo name="DesignViewScaleCombo"  itemfont="0" padding="20,0,0,0" width="87" height="25" float="false" normalimage="file='combo_input_normal.png' corner='2,2,22,2'" hotimage="file='combo_input_active.png' corner='2,2,22,2'" pushedimage="file='combo_input_active.png' corner='2,2,22,2'"  itemselectedtextcolor="#FFFFFFFF" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FFFFFFFF" itembkcolor="#FF4F4F4F" itemselectedbkcolor="#FF3E3E3E" itemhotbkcolor="#FF141414" itemendellipsis="true" itemtextpadding="10,2,1,1" dropbox="bkcolor=&quot;#FF4F4F4F&quot; bordercolor=&quot;#FF2B2B2B&quot;">
+				<ListLabelElement text="50%" selected="true" />
+				<ListLabelElement text="100%" />
+				<ListLabelElement text="150%" />
+				<ListLabelElement text="200%" />
+		</Combo>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

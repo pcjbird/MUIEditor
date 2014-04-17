@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="objectItem">
+	<HorizontalLayout name="checkProperty">
+	  <Label name="nodeText" bordersize="0" width="90" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+	  <CheckBox name="nodeCheck" tooltip=""  float="false" padding="10,4,0,0" width="16" height="16" normalimage="prop_uncheck.png" selectedimage="prop_check.png"/>
+	</HorizontalLayout>
+  </ListContainerElement>
+</Window>
